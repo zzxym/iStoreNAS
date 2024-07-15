@@ -1,0 +1,16 @@
+FROM ibuilder2:0.9
+
+USER builder
+
+VOLUME /work
+VOLUME /work/ib
+
+ENV WORK_SOURCE=/work
+ENV WORK_TARGET=x86_64
+
+COPY build.sh /bin/build.sh
+
+WORKDIR /work
+
+ENTRYPOINT [ "/bin/build.sh" ]
+
