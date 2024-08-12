@@ -30,6 +30,6 @@ else
     -v ${CURR}:/work \
     -v ${CURR}/ib_${TARGET}:/work/ib \
     -e WORK_TARGET=${TARGET} \
-    linkease/runmynas:latest Pack
+    linkease/runmynas:latest
 fi
 
