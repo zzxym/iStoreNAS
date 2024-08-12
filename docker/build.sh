@@ -49,18 +49,22 @@ if [ "$IB_FOUND" = "0" ]; then
       *x86*)
           cp src/repositories_x86_64.conf ib/repositories.conf
           cp src/target_x86_64.manifest ib/custom.manifest
+          cp -a files/x86_64/* ib/files
         ;;
       *rk35xx*)
           cp src/repositories_rk35xx.conf ib/repositories.conf
           cp src/target_rk35xx.manifest ib/custom.manifest
+          cp -a files/rk35xx/* ib/files
         ;;
       *rk33xx*)
           cp src/repositories_rk33xx.conf ib/repositories.conf
           cp src/target_rk33xx.manifest ib/custom.manifest
+          cp -a files/rk33xx/* ib/files
         ;;
       *bcm2711*)
           cp src/repositories_aarch64.conf ib/repositories.conf
           cp src/target_bcm2711.manifest ib/custom.manifest
+          cp -a files/bcm2711/* ib/files
         ;;
     esac
 fi
