@@ -10,7 +10,7 @@ RUN apt-get update &&\
         libsnmp-dev liblzma-dev libpam0g-dev cpio rsync gcc-multilib && \
     apt-get clean && \
     useradd -m builder && \
-    echo 'user ALL=NOPASSWD: ALL' > /etc/sudoers.d/builder
+    echo 'builder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
 
 # set system wide dummy git config
 RUN git config --system user.name "builder" && git config --system user.email "builder@example.com"
