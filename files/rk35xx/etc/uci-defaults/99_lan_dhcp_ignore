@@ -1,0 +1,6 @@
+uci get dhcp.lan 1>/dev/null 2>/dev/null && {
+uci batch <<EOF
+set dhcp.lan.ignore='1'
+commit dhcp
+EOF
+}
