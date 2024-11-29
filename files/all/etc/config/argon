@@ -1,0 +1,9 @@
+config global
+        option dark_primary '#483d8b'
+        option blur '10'
+        option blur_dark '10'
+        option transparency '0.5'
+        option transparency_dark '0.5'
+        option bing_background '0'
+        option mode 'light'
+        option primary '#8ba3c7'
